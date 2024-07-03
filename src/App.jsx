@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import React from 'react';
-import ScionLogo from "https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/ScionLogo.png" 
-import ScionIndiaLogo from "https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/ScionLogo.png";
+import React from 'react'; 
 import Language from './pages/Language/Language.jsx';
 import Age from './pages/Age/Age.jsx';
 import WorkExperience from './pages/WorkExperience/WorkExperience.jsx';
@@ -25,12 +23,12 @@ function App() {
             <div className='footer'>{score >= 67 ? footer1 : footer2}</div> 
           </form>  
         <div className='crs-form-display'>
-          <img src={ScionIndiaLogo} />
+          <img src="https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/Logo.png" />
           <div>Your Score:<br />{score}/100</div>
         </div>
         <div className='crs-form-display-small'>   
           <div>Your Score: {score}/100</div>
-          <img src={ScionIndiaLogo} />
+          <img src="https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/Logo.png" />
         </div>
       </div>
       <div className="crs-form-container" style={step != 7 ? { display: 'flex' } : { display: 'none' }}>
@@ -57,7 +55,7 @@ function App() {
         </div>
         <div className='crs-score-display'>
           <div className='crs-score-banner'>
-            <img className='crs-score-banner-img' src={ScionLogo} />
+            <img className='crs-score-banner-img' src="https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/Logo.png" />
           </div>
           <div className='crs-score-section'>
             <div className='crs-score-title'>Your score:</div>
@@ -69,7 +67,7 @@ function App() {
         </div>
         <div className='crs-score-display-small'>
           <span className='crs-score'>Score: {score}/100</span>
-          <img className='crs-score-banner-img' src={ScionLogo} />
+          <img className='crs-score-banner-img' src="https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/Logo.png" />
         </div>
       </div>
     </>
