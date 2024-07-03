@@ -1,0 +1,43 @@
+.adaptability-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+}
+
+.adaptability-buttons-title {
+    font-weight: 700 ;
+    font-size: 1.25rem ;
+    padding: 25px 0% 15px 0%;
+}
+
+.adaptability-buttons {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start ;
+    align-content: start;
+    min-height: 250px;
+}
+.adaptability-buttons button { 
+    margin: 1% 2% 1% 0%;
+    padding: 5px 15px ;
+    border-radius: 5px ;
+    font-weight: 600 ;
+    font-size: 0.75rem;
+    width: 265px ;
+    height: 50px ;
+    background-color: #fff ;
+    border: 2px solid #d9d9d9;
+
+}
+.adaptability-buttons .selected {
+    background-color: #F7EBEA ;  
+    color : var(--primaryColor) ;
+    border: 2px solid var(--primaryColor) ;
+}
+.crs-form-buttons-adaptability {
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}

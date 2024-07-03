@@ -1,0 +1,41 @@
+.employment-buttons-container {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+}
+.employment-buttons-title {
+    font-weight: 700 ;
+    font-size: 1.25rem ;
+    padding: 25px 0% 15px 0%;
+}
+.employment-buttons { 
+    flex-wrap: wrap;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    min-height: 250px;
+    justify-content: start ;
+}
+.employment-buttons button { 
+    margin: 1% 2% 1% 0%;
+    padding: 5px 5px ;
+    border-radius: 5px ;
+    font-weight: 600 ;
+    font-size: 0.75rem;
+    width: 140px ;
+    height: 35px ;
+    background-color: #fff ;
+    border: 2px solid #d9d9d9;
+
+}
+.employment-buttons .selected {
+    background-color: #F7EBEA ;  
+    color : var(--primaryColor) ;
+    border: 2px solid var(--primaryColor) ;
+}
+@media (max-width:960px) {
+    .employment-buttons {
+        min-height: 190px;
+    }
+}

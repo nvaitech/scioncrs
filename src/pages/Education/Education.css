@@ -1,0 +1,36 @@
+.education-buttons-container {
+    display: flex; 
+    flex-direction: column;
+    width: 100% ;
+}
+.education-buttons-title {
+    font-weight: 700 ;
+    font-size: 1.25rem ;
+    padding: 25px 0% 15px 0%;
+}
+.education-buttons {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: start ;
+    align-content: start;
+    min-height: 250px;
+}
+.education-buttons button { 
+    margin: 1% 2% 1% 0%;
+    padding: 5px 20px ;
+    border-radius: 5px ;
+    font-weight: 600 ;
+    font-size: 0.75rem;
+    width: 250px ;
+    height: 50px ;
+    background-color: #fff ;
+    border: 2px solid #d9d9d9;
+
+}
+.education-buttons .selected {
+    background-color: #F7EBEA ;  
+    color : var(--primaryColor) ;
+    border: 2px solid var(--primaryColor) ;
+}

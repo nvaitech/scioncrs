@@ -1,0 +1,115 @@
+
+.language-container {
+    display: flex ;
+    flex-direction: column; 
+    width: 100%;
+    padding: 5px 0px;
+}
+.language-inputs{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.language-input-title {
+    font-size: 1.25rem; 
+    padding: 10px 0%;
+}
+.language-input {
+    font-size: 1rem ;
+    font-weight: 650 ;
+    padding: 15px 5% 15px 0%  ;
+}
+.language-input select {
+    padding: 10px 10px ;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px ;
+    color: black ;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    font-weight: 600 ;
+    font-size: 0.9rem;
+    outline: none ;
+}  
+.language-input select:hover {
+    box-shadow: 0px 2px #D9D9D9;
+    transform: translateY(-2px);
+}
+.language-container .language-togglers {
+    display: flex;
+    flex-direction: row;  
+    padding: 5px 0px;
+}
+.language-container .language-togglers button:nth-of-type(1) {
+    height: 35px ;
+    width: 115px ;
+    font-size: 0.75rem ; 
+    border: 2px solid var(--primaryColor);
+    padding: 0% 15px;
+    border-top-left-radius:  5px ;
+    border-bottom-left-radius: 5px;
+}
+.language-container .language-togglers button:nth-of-type(2) {
+    height: 35px ;
+    width: 115px ;
+    font-size: 0.75rem ; 
+    border: 2px solid var(--primaryColor);
+    padding: 0% 15px;
+    border-top-right-radius:  5px ;
+    border-bottom-right-radius: 5px;
+}
+.language-container .language-togglers .selected {
+    background-color: var(--primaryColor) ;
+    color: #fff 
+} 
+.language-container .language-togglers .de-selected:hover {
+    background-color : rgb(240,240,240) ;
+}
+.language-container .language-togglers .de-selected {
+    color : var(--primaryColor) ; 
+    background-color: #fff;
+}  
+.pl-container {
+    min-height: 250px ;
+}
+.pl-container .pl-heading {
+    font-weight: 700 ;
+    font-size: 1.25rem ;
+    padding: 25px 0% 15px 0%;
+}
+.sl-heading { 
+    font-weight: 700 ;
+    font-size: 1.25rem ;
+    padding: 25px 0% 15px 0%;
+} 
+.sl-buttons-title {
+    font-weight: 600;
+}
+.sl-buttons {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    min-height: 200px;
+}
+.sl-buttons button { 
+    margin: 1% 2% 1% 0%;
+    padding: 5px 5px ;
+    border-radius: 5px ;
+    font-weight: 600 ;
+    font-size: 0.75rem;
+    width: 150px ;
+    height: 40px ;
+    background-color: #fff ;
+    border: 2px solid #d9d9d9;
+
+}
+.sl-buttons .selected {
+    background-color: #F7EBEA ;  
+    color : var(--primaryColor) ;
+    border: 2px solid var(--primaryColor) ;
+}
+@media (max-width:960px) {
+    .sl-container .sl-buttons {
+        min-height : 180px ;
+    }
+    
+}
