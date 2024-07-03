@@ -9,8 +9,10 @@ import WorkExperience from './pages/WorkExperience/WorkExperience.jsx';
 import Education from './pages/Education/Education.jsx';
 import Employment from './pages/Employment/Employment.jsx';
 import Adaptability from './pages/Adaptability/Adaptability.jsx';
-const description1 = "It seems like you may qualify for the Federal Skilled Worker Program! Please fill in your details below and we’ll get in touch to discuss your next steps."
-const description2 = "Unfortunately, it does not seem like you qualify for the Express Entry program. For a more in-depth assessment, and to verify your results, please start by booking a discovery call with our RCIC."
+const description1 = "It seems like you may qualify for the Federal Skilled Worker Program!"
+const footer1 = "Please fill out the form below and a member of our team will get in touch with you soon."
+const description2 = "Unfortunately, it does not seem like you qualify for the Express Entry program."
+const footer2 = "Please fill out the form below and a member of our team will get in touch with you soon." ;
 function App() {
   const [score, setScore] = useState(0);
   const [step, setStep] = useState(1); 
@@ -19,7 +21,8 @@ function App() {
       <div className='crs-contact-form' style={step == 7 ? { display: 'flex' } : { display: 'none' }}>
           <form id='crs-contact-form' className='contact-form'>
             <div className='title'>{score >= 67 ? 'Congrats!' : 'Oops...'}</div>
-            <div className='desc'>{score >= 67 ? description1 : description2}</div> 
+            <div className='desc'>{score >= 67 ? description1 : description2}</div>
+            <div className='footer'>{score >= 67 ? footer1 : footer2}</div> 
           </form>  
         <div className='crs-form-display'>
           <img src={ScionIndiaLogo} />
