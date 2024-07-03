@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react';
-import ScionLogo from '../public/ScionIndiaLogo.png'
-import ScionIndiaLogo from '../public/ScionIndiaLogo.png';
+import ScionLogo from "https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/ScionLogo.png" 
+import ScionIndiaLogo from "https://cdn.jsdelivr.net/gh/nvaitech/scioncrs/public/ScionLogo.png";
 import Language from './pages/Language/Language.jsx';
 import Age from './pages/Age/Age.jsx';
 import WorkExperience from './pages/WorkExperience/WorkExperience.jsx';
